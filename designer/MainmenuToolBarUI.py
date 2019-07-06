@@ -1,7 +1,7 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from form import Ui_MainWindow
+from designer.menutoolbar import Ui_MainWindow
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
