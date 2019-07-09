@@ -15,6 +15,8 @@ class QLineEditMask(QWidget):
         macLineEdit = QLineEdit()
         dateLineEdit = QLineEdit()
         licenseLineEdit = QLineEdit()
+        onlyReadLineEdit = QLineEdit("只读")
+        onlyReadLineEdit.setReadOnly(True)
         # 192.168.21.45
         ipLineEdit.setInputMask('000.000.000.000;_')
         macLineEdit.setInputMask('HH:HH:HH:HH:HH:HH;_')
@@ -30,6 +32,7 @@ class QLineEditMask(QWidget):
         formLayout.addRow('Mac掩码', macLineEdit)
         formLayout.addRow('日期掩码', dateLineEdit)
         formLayout.addRow('许可证掩码', licenseLineEdit)
+        formLayout.addRow('只读', onlyReadLineEdit)
 
         self.setLayout(formLayout)
 
