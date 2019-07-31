@@ -35,8 +35,6 @@ class QComboBoxDemo(QWidget):
 
         self.btn.clicked.connect(self.clickdd)
 
-
-
         self.setLayout(layout)
 
     def selectChange(self, l):
@@ -50,6 +48,7 @@ class QComboBoxDemo(QWidget):
 
     def clickdd(self):
         print(self.cb.currentText())
+
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
