@@ -23,6 +23,7 @@ class QSpinBoxDemo(QWidget):
         self.spinbox = QSpinBox()
         layout.addWidget(self.spinbox)
         self.spinbox.valueChanged.connect(self.valueChange)
+        self.spinbox.setRange(0, 666)
 
     def valueChange(self):
         self.label.setText('当前值' + str(self.sender().value()))
